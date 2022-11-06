@@ -17,15 +17,22 @@ public class Zadanie3 {
                     new FileReader("output_3.txt"));
 
 //            Do zliczania słów:
-//            String[] słowaWLinii = liniaTekstuZPliku.split(" ");
+//
+            int ilośćLinii = 0;
             String liniaTekstu;
             do {
                 liniaTekstu = czytacz.readLine();
                 if (liniaTekstu != null) {
-                    // TODO: do zrobienia zliczanie
+                    ilośćLinii++;
+                    String[] słowaWLinii = liniaTekstu.split(" ");
+                    int ilośćSłów = słowaWLinii.length;
+
+                    System.out.println("Ilość słów: " + ilośćSłów);
                 }
 
             } while (liniaTekstu != null);
+
+            System.out.println("Ilość linii: " + ilośćLinii);
 
             czytacz.close();
         } catch (FileNotFoundException e) {
