@@ -45,6 +45,6 @@ public class PytanieLiczbowe implements Pytanie<Integer>{
             System.out.println(getTresc());
             odpowiedz = scanner.nextInt();
         } while (!odpowiedzPoprawna());
-        scanner.close();
+//        scanner.close();
     }
 }

@@ -46,6 +46,6 @@ public class PytanieTekstowe implements Pytanie<String>{
             System.out.println(getTresc());
             odpowiedz = scanner.nextLine();
         } while (!odpowiedzPoprawna());
-        scanner.close();
+//        scanner.close();
     }
 }
