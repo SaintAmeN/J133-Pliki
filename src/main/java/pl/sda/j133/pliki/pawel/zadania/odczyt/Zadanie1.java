@@ -1,4 +1,4 @@
-package pl.sda.j133.pliki.pawel.przyklad;
+package pl.sda.j133.pliki.pawel.zadania.odczyt;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -10,22 +10,26 @@ import java.io.IOException;
  * @project J133-Pliki
  * @created 06.11.2022
  */
-public class OdczytZPliku {
+public class Zadanie1 {
     public static void main(String[] args) {
-
         try {
             BufferedReader czytacz = new BufferedReader(
-                    new FileReader("output_1.txt"));
+                    new FileReader("output_w.txt"));
 
             String liniaTekstuZPliku = czytacz.readLine();
-            System.out.println(liniaTekstuZPliku);
+
+            if (!liniaTekstuZPliku.equals("Hello World!")) {
+                System.out.println("W pliku jest inna treść.");
+
+            } else {
+                System.out.println(liniaTekstuZPliku);
+            }
 
             czytacz.close();
         } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
+            System.err.println("O nie! Pliku nie ma!");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
