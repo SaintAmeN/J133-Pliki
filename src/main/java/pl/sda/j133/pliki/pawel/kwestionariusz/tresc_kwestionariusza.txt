@@ -1,0 +1,21 @@
+####### Treść formularza:
+1. Podaj płeć (kobieta/mężczyzna)?
+kot
+2. Podaj wiek?
+-5
+3. Podaj ogólne zadowolenie z kursu (1-10)?
+-50
+4. Czy poleciłbyś kurs znajomemu (tak/nie)?
+chyba ciebie...
+5. Podaj ogólne zadowolenie z trenera (1-10)?
+3
+6. Podziel się swoją opinią:
+cokolwiek cokolwiek cokolwiek
+
+Separator: ';'
+
+Zadanie:
+Stwórz program który zapisuje do pliku 'ankieta_sda.txt' wyniki pytań ankiety.
+Odpowiedzi powinny być oddzielone separatorem (patrz wyżej). Każda kolejna
+odpowiedź powinna być w nowej linii. Nie ma konieczności weryfikowania danych
+wprowadzanych przez użytkownika.
