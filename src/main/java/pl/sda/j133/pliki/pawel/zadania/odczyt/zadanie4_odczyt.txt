@@ -1,0 +1,5 @@
+Zadanie 4:
+a. Przeczytaj plik output_4.txt i wypisz ilość osób wprowadzonych w tym pliku
+b. Przeczytaj plik output_4.txt i wypisz imiona osób w pliku
+c. Przeczytaj plik output_4.txt i wypisz nazwiska osób w pliku
+d. Przeczytaj plik output_4.txt i wypisz średnią wieku osób w pliku
