@@ -1,0 +1,9 @@
+Zadanie 4:
+Opis formatu:
+Odczytaj dane od użytkownika:
+- imie, nazwisko, wiek
+
+Zapisz do pliku o nazwie (output_4.txt) w trybie append = true(!) dane użytkownika w formacie:
+Imie;Nazwisko;wiek
+
+Pamiętaj o oddzieleniu danych średnikiem (znak: ';')

@@ -1,0 +1,3 @@
+pawel;niegawel;40
+pawel;gawel;50
+drg;drhy;32
