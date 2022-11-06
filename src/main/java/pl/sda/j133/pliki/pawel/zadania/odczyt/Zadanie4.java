@@ -17,19 +17,24 @@ public class Zadanie4 {
                     new FileReader("output_4.txt"));
 
             int ilośćOsób = 0;
+            double sumaWieku = 0;
             String liniaTekstu;
             do {
                 liniaTekstu = czytacz.readLine();
+
                 if (liniaTekstu != null) {
                     ilośćOsób++;
                     String[] slowa = liniaTekstu.split(";");
                     System.out.println("" + slowa[0] + " -> " + slowa[1]);
 
-                    // Integer.parseInt()
+                    sumaWieku += Integer.parseInt(slowa[2]);
                 }
 
             } while (liniaTekstu != null);
             System.out.println("Ilość osób: " + ilośćOsób);
+
+            double srednia = sumaWieku/ilośćOsób;
+            System.out.println("Średnia wieku: " + srednia);
 
             czytacz.close();
         } catch (FileNotFoundException e) {
