@@ -41,28 +41,12 @@ public class KwestionariuszMain {
         pytania.add(pytanieCzyPolecisz);
         pytania.add(pytanieOcenaTrenera);
         Kwestionariusz kwestionariusz = new Kwestionariusz(pytania);
+
         kwestionariusz.wykonaj();
 
 //        TODO: stworzyć nowy rodzaj pytania który nie posiada żadnej weryfikacji.
 //        System.out.println("6. Podziel się swoją opinią:");
 //        String opinia = scanner.nextLine();
 //        opinia = opinia.replaceAll(";", "|");
-
-//        try {
-//            PrintWriter drukarkaTekstu = new PrintWriter(new FileWriter("ankieta_sda.txt", true));
-//
-//            drukarkaTekstu.println(
-//                    plec + ";" +
-//                            wiek + ";" +
-//                            zadowolenieOgolne + ";" +
-//                            czyPolecisz + ";" +
-//                            ocenaTrenera + ";" +
-//                            opinia);
-//
-//            drukarkaTekstu.close();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
-
     }
 }
