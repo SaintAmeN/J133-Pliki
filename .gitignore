@@ -3,3 +3,4 @@ target
 *.iml
 src/main/java/pl/sda/j133/pliki/kursant/
 output_*.txt
+*_*.txt
