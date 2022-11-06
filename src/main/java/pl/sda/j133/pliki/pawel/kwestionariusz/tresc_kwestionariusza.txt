@@ -14,7 +14,7 @@ cokolwiek cokolwiek cokolwiek
 
 Separator: ';'
 
-Zadanie:
+Zadanie (MVP - Minimum Viable Product):
 Stwórz program który zapisuje do pliku 'ankieta_sda.txt' wyniki pytań ankiety.
 Odpowiedzi powinny być oddzielone separatorem (patrz wyżej). Każda kolejna
 odpowiedź powinna być w nowej linii. Nie ma konieczności weryfikowania danych
