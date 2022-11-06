@@ -1,8 +1,7 @@
 package pl.sda.j133.pliki.pawel.kwestionariusz;
 
-import lombok.Data;
-
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * @author Paweł Recław, AmeN
@@ -25,17 +24,28 @@ public class PytanieTekstowe implements Pytanie<String>{
     }
 
     @Override
+    public void setOdpowiedz(String odpowiedz) {
+        this.odpowiedz = odpowiedz;
+    }
+
+    @Override
     public String getTresc() {
         return tresc;
     }
 
-    /**
-     * Metoda weryfikuje odpowiedz i zwraca true jeśli jest poprawna.
-     */
     @Override
     public boolean odpowiedzPoprawna() {
         // jeśli lista dostępnych odpowiedzi zawiera naszą odpowiedź
         return dostepneOdpowiedzi.contains(odpowiedz);
     }
 
+    @Override
+    public void zadajPytnie() {
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println(getTresc());
+            odpowiedz = scanner.nextLine();
+        } while (!odpowiedzPoprawna());
+        scanner.close();
+    }
 }

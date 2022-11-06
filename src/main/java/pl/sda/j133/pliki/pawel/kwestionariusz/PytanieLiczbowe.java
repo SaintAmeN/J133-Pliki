@@ -1,6 +1,6 @@
 package pl.sda.j133.pliki.pawel.kwestionariusz;
 
-import lombok.Data;
+import java.util.Scanner;
 
 /**
  * @author Paweł Recław, AmeN
@@ -24,6 +24,11 @@ public class PytanieLiczbowe implements Pytanie<Integer>{
     }
 
     @Override
+    public void setOdpowiedz(Integer odpowiedz) {
+        this.odpowiedz = odpowiedz;
+    }
+
+    @Override
     public String getTresc() {
         return tresc;
     }
@@ -31,5 +36,15 @@ public class PytanieLiczbowe implements Pytanie<Integer>{
     @Override
     public boolean odpowiedzPoprawna() {
         return odpowiedz > min && odpowiedz < max;
+    }
+
+    @Override
+    public void zadajPytnie() {
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println(getTresc());
+            odpowiedz = scanner.nextInt();
+        } while (!odpowiedzPoprawna());
+        scanner.close();
     }
 }
