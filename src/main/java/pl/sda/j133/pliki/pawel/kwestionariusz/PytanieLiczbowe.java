@@ -24,11 +24,6 @@ public class PytanieLiczbowe implements Pytanie<Integer>{
     }
 
     @Override
-    public void setOdpowiedz(Integer odpowiedz) {
-        this.odpowiedz = odpowiedz;
-    }
-
-    @Override
     public String getTresc() {
         return tresc;
     }

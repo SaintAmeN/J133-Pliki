@@ -11,7 +11,6 @@ public interface Pytanie<T> {
     public boolean odpowiedzPoprawna();
 
     public T getOdpowiedz();
-    public void setOdpowiedz(T odpowiedz);
 
     public void zadajPytnie();
 }

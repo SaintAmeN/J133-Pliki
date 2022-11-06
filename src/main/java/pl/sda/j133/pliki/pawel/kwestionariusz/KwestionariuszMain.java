@@ -45,6 +45,7 @@ public class KwestionariuszMain {
         kwestionariusz.wykonaj();
 
 //        TODO: stworzyć nowy rodzaj pytania który nie posiada żadnej weryfikacji.
+//
 //        System.out.println("6. Podziel się swoją opinią:");
 //        String opinia = scanner.nextLine();
 //        opinia = opinia.replaceAll(";", "|");

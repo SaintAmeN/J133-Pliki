@@ -24,11 +24,6 @@ public class PytanieTekstowe implements Pytanie<String>{
     }
 
     @Override
-    public void setOdpowiedz(String odpowiedz) {
-        this.odpowiedz = odpowiedz;
-    }
-
-    @Override
     public String getTresc() {
         return tresc;
     }
