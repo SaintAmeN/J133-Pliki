@@ -42,4 +42,9 @@ public class PytanieLiczbowe implements Pytanie<Integer>{
         } while (!odpowiedzPoprawna());
 //        scanner.close();
     }
+
+    @Override
+    public Integer odczytajOdpowiedz(String odp) {
+        return Integer.parseInt(odp);
+    }
 }

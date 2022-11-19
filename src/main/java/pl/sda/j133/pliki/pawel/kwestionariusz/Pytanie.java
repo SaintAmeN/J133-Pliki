@@ -13,4 +13,6 @@ public interface Pytanie<T> {
     public T getOdpowiedz();
 
     public void zadajPytnie();
+
+    public T odczytajOdpowiedz(String odp);
 }

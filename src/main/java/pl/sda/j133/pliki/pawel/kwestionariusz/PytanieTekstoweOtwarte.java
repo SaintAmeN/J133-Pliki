@@ -8,14 +8,12 @@ import java.util.Scanner;
  * @project J133-Pliki
  * @created 06.11.2022
  */
-public class PytanieTekstowe implements Pytanie<String>{
+public class PytanieTekstoweOtwarte implements Pytanie<String> {
     private String tresc;
     private String odpowiedz;
-    private List<String> dostepneOdpowiedzi;
 
-    public PytanieTekstowe(String tresc, List<String> dostepneOdpowiedzi) {
+    public PytanieTekstoweOtwarte(String tresc) {
         this.tresc = tresc;
-        this.dostepneOdpowiedzi = dostepneOdpowiedzi;
     }
 
     @Override
@@ -30,22 +28,19 @@ public class PytanieTekstowe implements Pytanie<String>{
 
     @Override
     public boolean odpowiedzPoprawna() {
-        // jeśli lista dostępnych odpowiedzi zawiera naszą odpowiedź
-        return dostepneOdpowiedzi.contains(odpowiedz);
+        return true;
     }
 
     @Override
     public void zadajPytnie() {
         Scanner scanner = new Scanner(System.in);
-        do {
-            System.out.println(getTresc());
-            odpowiedz = scanner.nextLine();
-        } while (!odpowiedzPoprawna());
-//        scanner.close();
+        System.out.println(getTresc());
+        odpowiedz = scanner.nextLine();
+        odpowiedz = odpowiedz.replaceAll(";", "|%21|");
     }
 
     @Override
     public String odczytajOdpowiedz(String odp) {
-        return odp;
+        return odp.replaceAll("\\|%21\\|", ";");
     }
 }
